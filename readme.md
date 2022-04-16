@@ -2,4 +2,4 @@
 
 Criado com Html, Scss e Javascript com JQuery e Three.Js
 
-Preciso otimizar algumas funções de show/hide mas ta funcionando.
+Preciso otimizar algumas funções de show/hide, e limpar o css mas ta funcionando.
