@@ -1,0 +1,428 @@
+// ICONES MAC
+.icon {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	border-radius: 18px;
+	box-sizing: border-box;
+    cursor: pointer;
+    margin-left: -8px;
+    margin-right: -8px;
+    transition: 0.2s ease-in-out;
+    border: 2px var(--clara) solid;
+ }
+ .icon:hover {
+  transform: scale(0.7) translateY(-90px);
+  filter: brightness(1.1) hue-rotate(15deg);
+}
+.reminders {
+    background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+	overflow: hidden;
+}
+.reminders .list-item {
+	position           : absolute;
+	width              : 66px;
+	height             : 20px;
+	left               : 32px;
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing    : border-box;
+	box-sizing         : border-box;
+}
+.reminders .list-item:before {
+	position      : absolute;
+	content       : '';
+	width         : 14px;
+	height        : 14px;
+	top           : 50%;
+	left          : -24px;
+	margin        : -7px 0 0 0;
+	border-radius : 8px;
+}
+.reminders .list-item:after {
+	position      : absolute;
+	content       : '';
+	width         : 10px;
+	height        : 10px;
+	top           : 50%;
+	left          : -21px;
+	margin        : -4px 0 0 0;
+	border-radius : 8px;
+}
+.reminders .list-item.i1 {
+	top           : 11px;
+	border-top    : 2px #dbdbdb solid;
+	border-bottom : 1px #dbdbdb solid;
+}
+.reminders .list-item.i1:before {
+	margin : -9px 0 0 0;
+	border : 1px white solid; }
+
+.reminders .list-item.i1:after {
+	margin     : -6px 0 0 0;
+	background : white;
+	box-shadow : 0 0 0 2px rgba(250, 151, 0, 0.3); }
+
+.reminders .list-item.i2 {
+	top           : 29px;
+	border-bottom : 2px #dbdbdb solid; }
+
+.reminders .list-item.i2:before {
+	border : 1px white solid; }
+
+.reminders .list-item.i2:after {
+	background : white;
+	box-shadow : 0 0 0 2px rgba(40, 179, 237, 0.3); }
+
+.reminders .list-item.i3 {
+	top           : 47px;
+	border-bottom : 1px #dbdbdb solid; }
+
+.reminders .list-item.i3:before {
+	margin : -8px 0 0 0;
+	border : 1px white solid; }
+
+.reminders .list-item.i3:after {
+	margin     : -5px 0 0 0;
+	background : white;
+	box-shadow : 0 0 0 2px rgba(105, 220, 66, 0.3); }
+
+.reminders .list-item.i4 {
+	top           : 65px;
+	border-bottom : 2px #dbdbdb solid; }
+
+.reminders .list-item.i4:before {
+	border : 1px white solid; }
+
+.reminders .list-item.i4:after {
+	background : white;
+	box-shadow : 0 0 0 2px rgba(190, 98, 217, 0.3);
+}
+
+.photos {
+    background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+	overflow : hidden;
+}
+.photos .fan {
+	position                 : absolute;
+	width                    : 26px;
+	height                   : 40px;
+	top                      : 50%;
+	left                     : 50%;
+	border-radius            : 22px;
+	-webkit-transform-origin : center center;
+	-moz-transform-origin    : center center;
+	-ms-transform-origin     : center center;
+	-o-transform-origin      : center center;
+	transform-origin         : center center;
+}
+.photos .f1 {
+	margin     : -42px 0 0 -13px;
+	z-index    : 8;
+	background : rgba(255, 255, 255, 0.4);
+ }
+.photos .f2 {
+	margin            : -38px 0 0 4px;
+	z-index           : 1;
+	transform         : rotateZ(45deg);
+	background : rgba(255, 255, 255, 0.4);
+}
+.photos .f3 {
+	margin            : -20px 0 0 10px;
+	z-index           : 2;
+	transform         : rotateZ(90deg);
+	background : rgba(255, 255, 255, 0.4);
+ }
+.photos .f4 {
+	margin            : -4px 0 0 2px;
+	z-index           : 3;
+	transform         : rotateZ(135deg);
+	background : rgba(255, 255, 255, 0.4);
+}
+.photos .f5 {
+	margin            : 2px 0 0 -13px;
+	z-index           : 4;
+	transform         : rotateZ(180deg);
+	background : rgba(255, 255, 255, 0.4);
+}
+.photos .f6 {
+	margin            : -4px 0 0 -31px;
+	z-index           : 5;
+	transform         : rotateZ(225deg);
+	background : rgba(255, 255, 255, 0.4);
+}
+.photos .f7 {
+	margin            : -20px 0 0 -36px;
+	z-index           : 6;
+	transform         : rotateZ(270deg);
+	background : rgba(255, 255, 255, 0.4);
+}
+.photos .f8 {
+	margin            : -36px 0 0 -31px;
+	z-index           : 7;
+	transform         : rotateZ(315deg);
+    background : rgba(255, 255, 255, 0.4);
+}
+.safari {
+ 	background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+ }
+.safari .compass {
+	position          : absolute;
+	width             : 86px;
+	height            : 86px;
+	top               : 50%;
+	left              : 50%;
+	overflow          : hidden;
+	margin            : -43px 0 0 -43px;
+	border-radius     : 43px;
+	box-shadow        : 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+	transform         : rotateZ(45deg);
+	background: linear-gradient(180deg, var(--primeiratransparente) 0%, var(--segunda) 100%);
+ }
+.safari .compass:before, .safari .compass:after {
+	position          : absolute;
+	content           : '';
+	border-style      : solid;
+	border-width      : 43px;
+	z-index           : 3;
+	-webkit-transform : scaleX(0.15);
+	-moz-transform    : scaleX(0.15);
+	-ms-transform     : scaleX(0.15);
+	-o-transform      : scaleX(0.15);
+	transform         : scaleX(0.15);
+}
+.safari .compass:before {
+	top          : 43px;
+	left         : 0;
+	border-color : white transparent transparent transparent;
+}
+.safari .compass:after {
+	top          : -43px;
+	left         : 0;
+	border-color : transparent transparent var(--terceira) transparent;
+}
+.safari .scale {
+	position          : absolute;
+	width             : 80px;
+	height            : 80px;
+	top               : 50%;
+	left              : 50%;
+	margin            : -40px 0 0 -40px;
+	transform         : rotateZ(-45deg);
+}
+
+.safari .scale .line {
+	position : absolute;
+	width    : 80px;
+	height   : 80px;
+	top      : 0;
+	left     : 0;
+}
+.safari .scale .line:after, .safari .scale .line:before {
+	position : absolute;
+	content  : '';
+}
+.safari .scale .line:before {
+	width      : 1px;
+	height     : 80px;
+	top        : 0;
+	left       : 50%;
+	background : linear-gradient(top, rgba(255, 255, 255, 0.7) 10%, rgba(255, 255, 255, 0) 11%, rgba(255, 255, 255, 0) 89%, rgba(255, 255, 255, 0.7) 90%, rgba(255, 255, 255, 0.7) 100%);
+}
+.safari .scale .line:after {
+	width      : 80px;
+	height     : 1px;
+	top        : 50%;
+	left       : 0;
+	background : linear-gradient(left, rgba(255, 255, 255, 0.7) 10%, rgba(255, 255, 255, 0) 11%, rgba(255, 255, 255, 0) 89%, rgba(255, 255, 255, 0.7) 90%, rgba(255, 255, 255, 0.7) 100%);
+}
+.safari .scale .line.s:before {
+	background : linear-gradient(top, rgba(255, 255, 255, 0.7) 7%, rgba(255, 255, 255, 0) 8%, rgba(255, 255, 255, 0) 92%, rgba(255, 255, 255, 0.7) 93%, rgba(255, 255, 255, 0.7) 100%); }
+
+.safari .scale .line.s:after {
+	background : linear-gradient(left, rgba(255, 255, 255, 0.7) 7%, rgba(255, 255, 255, 0) 8%, rgba(255, 255, 255, 0) 92%, rgba(255, 255, 255, 0.7) 93%, rgba(255, 255, 255, 0.7) 100%); }
+
+.safari .scale .line.l1 {
+	transform         : rotateZ(0deg);
+}
+.safari .scale .line.l2 {
+	transform         : rotateZ(10deg);
+}
+.safari .scale .line.l3 {
+	transform         : rotateZ(20deg);
+}
+.safari .scale .line.l4 {
+	transform         : rotateZ(30deg);
+}
+.safari .scale .line.l5 {
+	transform         : rotateZ(40deg);
+}
+.safari .scale .line.l6 {
+	transform         : rotateZ(50deg);
+}
+.safari .scale .line.l7 {
+	transform         : rotateZ(60deg);
+}
+.safari .scale .line.l8 {
+	transform         : rotateZ(70deg);
+}
+.safari .scale .line.l9 {
+	transform         : rotateZ(80deg);
+}
+.safari .scale .line.l10 {
+	transform         : rotateZ(5deg);
+}
+.safari .scale .line.l11 {
+	transform         : rotateZ(15deg);
+}
+.safari .scale .line.l12 {
+	transform         : rotateZ(25deg);
+}
+.safari .scale .line.l13 {
+	transform         : rotateZ(35deg);
+}
+.safari .scale .line.l14 {
+	transform         : rotateZ(45deg);
+}
+.safari .scale .line.l15 {
+	transform         : rotateZ(55deg);
+}
+.safari .scale .line.l16 {
+	transform         : rotateZ(65deg);
+}
+.safari .scale .line.l17 {
+	transform         : rotateZ(75deg);
+}
+.safari .scale .line.l18 {
+	transform         : rotateZ(85deg);
+}
+.appstore {
+    background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+}
+.appstore:hover {
+    background: linear-gradient(180deg, var(--primeira) 50%, var(--segunda) 100%);
+}
+.appstore:before {
+	position      : absolute;
+	content       : '';
+	width         : 56px;
+	height        : 6px;
+	top           : 50%;
+	left          : 50%;
+	margin        : -3px 0 0 -28px;
+	background    : #fff;
+	border-radius : 1px;
+	box-shadow    : 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.appstore .picto {
+	position      : absolute;
+	width         : 78px;
+	height        : 78px;
+	top           : 50%;
+	left          : 50%;
+	margin        : -43px 0 0 -43px;
+	border        : 4px white solid;
+	border-radius : 43px;
+	box-shadow    : 0 0 0 1px rgba(0, 0, 0, 0.1); }
+
+.appstore .crayon {
+	position          : absolute;
+	width             : 27px;
+	height            : 7px;
+	top               : 32px;
+	left              : 11px;
+	z-index           : 2;
+	background        : #fff;
+	box-shadow        : 0 0 0 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform : rotateZ(-60deg);
+	-moz-transform    : rotateZ(-60deg);
+	-ms-transform     : rotateZ(-60deg);
+	-o-transform      : rotateZ(-60deg);
+	transform         : rotateZ(-60deg); }
+
+.appstore .crayon:before {
+	position          : absolute;
+	top               : -7px;
+	left              : -21px;
+	content           : '';
+	border-width      : 10px;
+	border-style      : solid;
+	border-color      : transparent white transparent transparent;
+	-webkit-transform : scaleY(0.3);
+	-moz-transform    : scaleY(0.3);
+	-ms-transform     : scaleY(0.3);
+	-o-transform      : scaleY(0.3);
+	transform         : scaleY(0.3); }
+
+.appstore .crayon:after {
+	position      : absolute;
+	content       : '';
+	width         : 6px;
+	height        : 7px;
+	top           : 0;
+	right         : -7px;
+	background    : #fff;
+	border-radius : 0 1px 1px 0;
+	box-shadow    : 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.appstore .pencil {
+	position          : absolute;
+	width             : 32px;
+	height            : 7px;
+	top               : 22px;
+	right             : 15px;
+	z-index           : 2;
+	background        : #fff;
+	box-shadow        : 0 0 0 1px rgba(0, 0, 0, 0.3);
+	transform         : rotateZ(60deg);
+}
+.appstore .pencil:before {
+	position          : absolute;
+	top               : -7px;
+	right             : -28px;
+	content           : '';
+	border-width      : 10px;
+	border-style      : solid;
+	border-color      : transparent transparent transparent white;
+	border-radius     : 14px;
+	transform         : scaleY(0.7);
+}
+.appstore .pencil:after {
+	position      : absolute;
+	content       : '';
+	width         : 6px;
+	height        : 7px;
+	top           : 0;
+	right         : -7px;
+	background    : #fff;
+	border-radius : 0 1px 1px 0;
+	box-shadow    : 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.messages {
+  background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+}
+.messages:before {
+	position          : absolute;
+	content           : '';
+	width             : 74px;
+	height            : 74px;
+	top               : 50%;
+	left              : 50%;
+	margin            : -37px 0 0 -37px;
+	background        : #fff;
+	border-radius     : 37px;
+	box-shadow        : 0 0 0 1px rgba(0, 0, 0, 0.1);
+	transform         : scaleY(0.81);
+}
+.messages:after {
+	position          : absolute;
+	content           : '';
+	bottom            : 8px;
+	left              : 16px;
+	border-width      : 8px;
+	border-style      : solid;
+	border-color      : white transparent transparent transparent;
+	transform         : rotateZ(35deg) scaleX(0.5) scaleY(1.6);
+}
