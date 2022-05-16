@@ -2,10 +2,10 @@
 let slider = document.querySelector('#shade');
 slider.value = 130;
 slider.addEventListener('input', function(){
-  console.log(this.value);
   document.documentElement.style.setProperty('--hue-color', this.value)
 });
-// Dark Theme
+
+// Alteram para o Dark Theme
 $(".switch").on("click", () => {
     $(".switch").toggleClass("switch-on");
     $(".texto-light").toggleClass("texto-dark");
@@ -17,8 +17,6 @@ $(".switch").on("click", () => {
     $(".janela").toggleClass("janela-dark");
     $(".frame").toggleClass("frame-on");
     $(".sobrepoe").toggleClass("sobrepoe-dark");
-    $(".sky").toggleClass("sky-on");
-    $(".sois").toggleClass("sois-on");
     $(".cartaodentro").toggleClass("cartaodentro-on");
     $(".teste").toggleClass("teste-on");
     $(".ctinput").toggleClass("ctinput-dark");
@@ -180,7 +178,7 @@ function updateClock() {
     // Converte hora de "0" a "12"
     currentHours = (currentHours === 0) ? 12 : currentHours;
   
-    // Composição da sting
+    // Composição da string
     var currentTimeString = day + " " + currentHours + ":" + currentMinutes + " " + timeOfDay;
     var longTimeString = longDay + ", " + month + " " + date + ", " + year;
     $("#clock").html(currentTimeString);

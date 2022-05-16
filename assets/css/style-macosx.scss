@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /*pre definições*/
 * {
     margin:0;
@@ -634,7 +634,7 @@ input[type="range"] {
 
 	span {
     color: var(--primeira);
-		font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-family: Impact, 'Anton', 'Arial Narrow Bold', sans-serif;
 		font-weight: 700;
 		font-style: italic;
 		display: block;
@@ -1178,7 +1178,6 @@ footer img:hover{
     margin: 0 10px;
 	transform: scale(1.2);
 }
-
 
 .cssanimation, .cssanimation span {
   animation-duration: 1s;
