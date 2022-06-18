@@ -5,6 +5,11 @@ slider.addEventListener('input', function(){
   document.documentElement.style.setProperty('--hue-color', this.value)
 });
 
+// adiciona script fundo no desktop = retira do mobile
+$(function(){
+  if($('body').width() > 400) { $('head').append('<script src="./assets/js/linhas.js" id="remove_me_on_mobile"><\/script>'); }
+});
+
 // Alteram para o Dark Theme
 $(".switch").on("click", () => {
     $(".switch").toggleClass("switch-on");
