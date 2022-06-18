@@ -736,7 +736,7 @@ input[type="range"] {
 }
 
 .fotosobre {
-  background-image: url(/assets/img/fotos/eu-dow.png);
+  background-image: url("/assets/img/fotos/eu-dow.png");
   background-position: center;
   background-size: cover;
   width: 150px;

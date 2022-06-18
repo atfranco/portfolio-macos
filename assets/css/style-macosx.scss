@@ -360,7 +360,7 @@ input[type="range"] {
   background-size: cover;
   background-position: center;
   filter: blur(10px);
-  background-image: url('/assets/img/fotos/eu-dow.png');
+  background-image: url("/assets/img/fotos/eu-dow.png");
   transform: scale(1.25);
   margin-top: 10px;
 }
@@ -563,7 +563,7 @@ input[type="range"] {
   overflow: hidden;
 }
 .fotosobre {
-  background-image: url(/assets/img/fotos/eu-dow.png);
+  background-image: url("/assets/img/fotos/eu-dow.png");
   background-position: center;
   background-size: cover;
   width: 150px;
