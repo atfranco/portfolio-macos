@@ -1,6 +1,6 @@
 // PICK COR VARIAVEL HSL
 let slider = document.querySelector('#shade');
-slider.value = 130;
+slider.value = 195;
 slider.addEventListener('input', function(){
   document.documentElement.style.setProperty('--hue-color', this.value)
 });
@@ -10,7 +10,8 @@ $(".switch").on("click", () => {
     $(".switch").toggleClass("switch-on");
     $(".texto-light").toggleClass("texto-dark");
     $(".cor").toggleClass("cor-dark");
-    $(".uil").toggleClass("uil-dark");
+    $(".cartao").toggleClass("cartao-dark");
+    $(".cartaodentro").toggleClass("cartaodentro-dark");
     $(".theme-switch").toggleClass("theme-switch-on");
     $(".fundowhite").toggleClass("fundodark");
     $(".head").toggleClass("head-dark");
@@ -20,6 +21,7 @@ $(".switch").on("click", () => {
     $(".cartaodentro").toggleClass("cartaodentro-on");
     $(".teste").toggleClass("teste-on");
     $(".ctinput").toggleClass("ctinput-dark");
+    $("canvas").toggleClass("canvas-on");
 });
 
 // janelas
@@ -131,68 +133,59 @@ jQuery(function(){
 
 //Relogio
 function updateClock() {
-    var currentTime = new Date();
-    var currentHours = currentTime.getHours();
-    var currentMinutes = currentTime.getMinutes();
-    var currentSeconds = currentTime.getSeconds();
-    var shortDays = [
-        'Dom', //Sunday starts at 0
-        'Seg',
-        'Ter',
-        'Qua',
-        'Qui',
-        'Sex',
-        'Sab'
-    ];
-    var longDays = [
-        'Sunday', //Sunday starts at 0
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
-    ];
-    var months = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  
-    d = new Date();
-    m = d.getMonth();
-    month = (months[m]);
-    date = d.getDate();
-    year = d.getFullYear();
-    x = d.getDay(); 
-  
-    var day = (shortDays[x]);
-    var longDay = (longDays[x]);
-  
-
-    currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
-    currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
-  
-    // "AM" or "PM"
-    var timeOfDay = (currentHours < 12) ? "AM" : "PM";
-  
-    // Converte horas em 12/12
-    currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;
-  
-    // Converte hora de "0" a "12"
-    currentHours = (currentHours === 0) ? 12 : currentHours;
-  
-    // Composição da string
-    var currentTimeString = day + " " + currentHours + ":" + currentMinutes + " " + timeOfDay;
-    var longTimeString = longDay + ", " + month + " " + date + ", " + year;
-    $("#clock").html(currentTimeString);
-    $("#date").html(longTimeString);
-  
-  }
-  $(document).ready(function() {
-    updateClock();
-    setInterval('updateClock()', 10000);
-  });  
-
-  // Click = Jump Dock
-  $("footer div").click(function() {
-    $(this).removeClass("jump");
-    this.offsetWidth = this.offsetWidth;
-    $(this).addClass("jump");
-  });
+  var currentTime = new Date();
+  var currentHours = currentTime.getHours();
+  var currentMinutes = currentTime.getMinutes();
+  var currentSeconds = currentTime.getSeconds();
+  var shortDays = [
+      'Dom',
+      'Seg',
+      'Ter',
+      'Qua',
+      'Qui',
+      'Sex',
+      'Sab'
+];
+  var longDays = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+];
+  var months = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];  
+  d = new Date();
+  m = d.getMonth();
+  month = (months[m]);
+  date = d.getDate();
+  year = d.getFullYear();
+  x = d.getDay();   
+  var day = (shortDays[x]);
+  var longDay = (longDays[x]);  
+  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+  currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;  
+  // "AM" or "PM"
+  var timeOfDay = (currentHours < 12) ? "AM" : "PM";  
+  // Converte horas em 12/12
+  currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;  
+  // Converte hora de "0" a "12"
+  currentHours = (currentHours === 0) ? 12 : currentHours;  
+  // Composição da string
+  var currentTimeString = day + " " + currentHours + ":" + currentMinutes + " " + timeOfDay;
+  var longTimeString = longDay + ", " + month + " " + date + ", " + year;
+  $("#clock").html(currentTimeString);
+  $("#date").html(longTimeString);  
+}
+// Relogio
+$(document).ready(function() {
+  updateClock();
+  setInterval('updateClock()', 10000);
+});
+// Click = Jump Dock
+$("footer div").click(function() {
+  $(this).removeClass("jump");
+  this.offsetWidth = this.offsetWidth;
+  $(this).addClass("jump");
+});

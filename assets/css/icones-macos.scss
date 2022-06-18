@@ -11,14 +11,14 @@
     margin-left: -8px;
     margin-right: -8px;
     transition: 0.2s ease-in-out;
-    border: 2px var(--clara) solid;
+    border: 1px var(--acentua) solid;
  }
  .icon:hover {
   transform: scale(0.7) translateY(-90px);
   filter: brightness(1.1) hue-rotate(15deg);
 }
 .reminders {
-    background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+    background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 	overflow: hidden;
 }
 .reminders .list-item {
@@ -101,7 +101,7 @@
 }
 
 .photos {
-    background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+    background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 	overflow : hidden;
 }
 .photos .fan {
@@ -165,7 +165,7 @@
     background : rgba(255, 255, 255, 0.4);
 }
 .safari {
- 	background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+ 	background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
  }
 .safari .compass {
 	position          : absolute;
@@ -298,10 +298,10 @@
 	transform         : rotateZ(85deg);
 }
 .appstore {
-    background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+    background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 }
 .appstore:hover {
-    background: linear-gradient(180deg, var(--primeira) 50%, var(--segunda) 100%);
+    background: linear-gradient(180deg, var(--acentua) 50%, var(--acentua) 100%);
 }
 .appstore:before {
 	position      : absolute;
@@ -401,7 +401,7 @@
 }
 
 .messages {
-  background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+  background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 }
 .messages:before {
 	position          : absolute;

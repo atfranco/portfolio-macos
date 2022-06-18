@@ -25,7 +25,7 @@ $(document).ready(function(){
             $("#exact_age").text("Invalid birthday - Please try again!");
         }
         else {
-            $("#exact_age").html("<span id=\"age\">" + year_age + " Anos " + month_age + " Meses " + day_age + " Dias</span>");
+            $("#exact_age").html("<span id=\"age\">" + year_age + " Anos " + month_age + " Meses " + day_age + " Dias de idade</span>");
         }
     });
 });

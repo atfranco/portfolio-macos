@@ -12,7 +12,7 @@
   margin-right: -8px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  border: 2px var(--clara) solid;
+  border: 1px var(--acentua) solid;
 }
 
 .icon:hover {
@@ -23,8 +23,8 @@
 }
 
 .reminders {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--segunda)));
-  background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--acentua)));
+  background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
   overflow: hidden;
 }
 
@@ -125,8 +125,8 @@
 }
 
 .photos {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--segunda)));
-  background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--acentua)));
+  background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
   overflow: hidden;
 }
 
@@ -204,8 +204,8 @@
 }
 
 .safari {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--segunda)));
-  background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--acentua)));
+  background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 }
 
 .safari .compass {
@@ -390,13 +390,13 @@
 }
 
 .appstore {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--segunda)));
-  background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--acentua)));
+  background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 }
 
 .appstore:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--primeira)), to(var(--segunda)));
-  background: linear-gradient(180deg, var(--primeira) 50%, var(--segunda) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--acentua)), to(var(--acentua)));
+  background: linear-gradient(180deg, var(--acentua) 50%, var(--acentua) 100%);
 }
 
 .appstore:before {
@@ -506,8 +506,8 @@
 }
 
 .messages {
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--segunda)));
-  background: linear-gradient(180deg, var(--primeira) 0%, var(--segunda) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primeira)), to(var(--acentua)));
+  background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 }
 
 .messages:before {
