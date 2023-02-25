@@ -1,11 +1,34 @@
+// ANIMACAO INPUT RANGE ASSOCIANDO A MUDANÇA AO CSS = hue-color
+
+function inicia(){
+  animainicia = setInterval(function() {
+    var slider = $('#shade').val(function(i, val) {
+      document.documentElement.style.setProperty('--hue-color', val);
+       return +val + 1;     
+    });
+  }, 100);
+}
+
+// Starta animação do input range
+
+inicia();
+
+// Stop animação do input range
+
+function pararanimacao(){
+  clearInterval(animainicia);
+}
+document.getElementById("shade").addEventListener("click", pararanimacao);
+
 // PICK COR VARIAVEL HSL
+
 let slider = document.querySelector('#shade');
-slider.value = 195;
+slider.value = 0;
 slider.addEventListener('input', function(){
-  document.documentElement.style.setProperty('--hue-color', this.value)
+  document.documentElement.style.setProperty('--hue-color', this.value);
 });
 
-// adiciona script fundo no desktop = retira do mobile
+// adiciona script fundo LINES no desktop = retira do mobile
 $(function(){
   if($('body').width() > 400) { $('head').append('<script src="./assets/js/linhas.js" id="remove_me_on_mobile"><\/script>'); }
 });

@@ -21,6 +21,7 @@
     background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 	overflow: hidden;
 }
+
 .reminders .list-item {
 	position           : absolute;
 	width              : 66px;
@@ -300,9 +301,7 @@
 .appstore {
     background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 }
-.appstore:hover {
-    background: linear-gradient(180deg, var(--acentua) 50%, var(--acentua) 100%);
-}
+
 .appstore:before {
 	position      : absolute;
 	content       : '';
@@ -425,4 +424,8 @@
 	border-style      : solid;
 	border-color      : white transparent transparent transparent;
 	transform         : rotateZ(35deg) scaleX(0.5) scaleY(1.6);
+}
+.fundicone:hover {
+    background: linear-gradient(180deg, var(--primeiratransparente) 50%, var(--acentua) 100%);
+	box-shadow: 5px 5px var(--primeiratransparente);
 }

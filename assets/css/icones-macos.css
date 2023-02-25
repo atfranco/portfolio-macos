@@ -394,11 +394,6 @@
   background: linear-gradient(180deg, var(--primeira) 0%, var(--acentua) 100%);
 }
 
-.appstore:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--acentua)), to(var(--acentua)));
-  background: linear-gradient(180deg, var(--acentua) 50%, var(--acentua) 100%);
-}
-
 .appstore:before {
   position: absolute;
   content: '';
@@ -536,5 +531,12 @@
   border-color: white transparent transparent transparent;
   -webkit-transform: rotateZ(35deg) scaleX(0.5) scaleY(1.6);
           transform: rotateZ(35deg) scaleX(0.5) scaleY(1.6);
+}
+
+.fundicone:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--primeiratransparente)), to(var(--acentua)));
+  background: linear-gradient(180deg, var(--primeiratransparente) 50%, var(--acentua) 100%);
+  -webkit-box-shadow: 5px 5px var(--primeiratransparente);
+          box-shadow: 5px 5px var(--primeiratransparente);
 }
 /*# sourceMappingURL=icones-macos.css.map */

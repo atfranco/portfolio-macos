@@ -9,7 +9,7 @@
 }
 :root {
     /* Hue da HSL */
-    --hue-color: 195;
+    --hue-color: 0;
     --hue-acentua: calc(var(--hue-color) + 30);
     --hue-diminui: calc(var(--hue-color) - 30);
     --acentua: hsl(var(--hue-acentua), 100%, 50%);
