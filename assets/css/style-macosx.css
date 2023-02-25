@@ -984,7 +984,7 @@ span.categoria {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   text-orientation: upright;
-  background-color: var(--primeira);
+  background-color: var(--segunda);
   text-align: center;
   color: white;
   padding: 0.25rem;
