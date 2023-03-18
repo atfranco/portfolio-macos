@@ -22,7 +22,7 @@
   --fundo: hsl(var(--hue-color), 48%, 12%);
   --clara: hsl(var(--hue-color), 50%, 70%);
   --primeiratransparente: hsla(var(--hue-color), 100%, 50%, 50%);
-  --primeira: hsl(var(--hue-color), 100%, 50%);
+  --primeira: hsl(var(--hue-color), 100%, 60%);
   --segunda: hsl(var(--hue-color), 50%, 50%);
   --terceira: hsl(var(--hue-color), 50%, 20%);
   --light1: hsl(var(--hue-color), 50%, 30%);
@@ -689,7 +689,7 @@ input[type="range"] {
   font-size: 0.8rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#1c1c1c));
   background: linear-gradient(to bottom, #444444 0%, #1c1c1c 100%);
-  color: var(--primeira);
+  color: var(--clara);
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2);
   height: 100%;
   display: -webkit-box;
@@ -704,9 +704,11 @@ input[type="range"] {
 }
 
 .botaocinza:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #444444), to(#1c1c1c));
-  background: linear-gradient(to bottom, #444444 30%, #1c1c1c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #444444), to(#1c1c1c));
+  background: linear-gradient(to bottom, #444444 50%, #1c1c1c 100%);
   color: white;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .ativa-bt {
@@ -1648,9 +1650,6 @@ footer img:hover {
   }
   .boxserv {
     width: 100%;
-  }
-  .botaocinza {
-    padding: 1rem;
   }
   .titulo-nome {
     height: 5rem;
