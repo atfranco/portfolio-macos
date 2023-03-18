@@ -15,7 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
   
   <link rel="stylesheet" href="./assets/css/icones-macos.css">
-  <link rel="stylesheet" href="./assets/css/style-macos-novo.css">
+  <link rel="stylesheet" href="./assets/css/style-macosx.css">
   <!--METASEO-->        
   <meta name="author" content="Arthur Franco">
   <meta name="keywords" content="Criação de sites, Ecommerce, Sistemas, Wordpress, HTML, CSS">
@@ -46,20 +46,21 @@
   <div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle menumobile" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-      <li><a class="dropdown-item mostraJanela" target="1">Resumo</a></li>
-      <li><a class="dropdown-item mostraJanela" target="2">Habilidades</a></li>
-      <li><a class="dropdown-item modal-servicos mostraJanela" target="3">Serviços</a></li>
-      <li><a class="dropdown-item modal-portfolio mostraJanela" target="4">Portfólio</a></li>
+      <li><a class="dropdown-item active modal-sobremim" href="javascript:;">Resumo</a></li>
+      <li><a class="dropdown-item modal-habilidades" href="javascript:;">Habilidades</a></li>
+      <li><a class="dropdown-item modal-servicos" href="javascript:;">Serviços</a></li>
+      <li><a class="dropdown-item modal-portfolio" href="javascript:;">Portfólio</a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item modal-contato mostraJanela" target="5">Contato</a></li>
+      <li><a class="dropdown-item modal-contato" href="javascript:;">Contato</a></li>
     </ul>
   </div>
 </header>
 <main>
-<section class="center flex alinha alvojanela" style="margin-top: 3rem" id="janela1">
-  <div class="cartao alinha flex ">
+<section class="center flex alinha mostrar" style="margin-top: 3rem;" id="sobremim-secao">
+  <div class="cartao alinha flex mostrar" id="sobremim">
     <div class="header-transp flex horiz">
-        <div class="icon appstore diminui-janela">
+      <div class="btn-fechar"></div>
+      <div class="icon appstore diminui-janela">
         <span class="picto">
           <span class="pencil"></span>
           <span class="crayon"></span>
@@ -79,17 +80,6 @@
         </div>
           <h2 class="cssanimation sequence leRotateSkateInLeft">Desenvolvedor Full Stack</h2>
           <h2 style="margin-top: -10px;">& Designer Gráfico</h2>
-          <canvas class="webgl"></canvas>
-
-          <div class="threetxt">
-              <div style="color: #fff">{ARTHUR.FRANCO}</div>
-              <div style="color: var(--primeira)">DESIGNER &</div>
-              <div style="color: var(--primeira)">DESENVOLVEDOR WEB</div>
-          </div>
-          <script type="module" src="assets/js/threecannonTESTE.js"></script>
-
-
-
           <div class="mb1" id="age_container">
           <span id="exact_age">Age</span>
         </div>
@@ -164,9 +154,10 @@
     </div> 
   </div>     
 </section>
-<section class="center flex alinha alvojanela" style="margin-top: 3rem" id="janela2">
-  <div class="cartao alinha flex">
+<section class="center flex alinha" style="margin-top: 3rem;" id="habilidades-secao">
+  <div class="cartao alinha flex" id="habilidades">
     <div class="header-transp flex horiz">
+      <div class="btn-fechar"></div>
       <div class="icon reminders diminui-janela">
         <span class="list-item i1"></span>
         <span class="list-item i2"></span>
@@ -175,7 +166,7 @@
       </div>
       <h2 class="titulo-header">Habilidades</h2>
     </div>           
-    <div class="cartaodentro flex alinha glass" style="margin-bottom: 1rem">
+    <div class="cartaodentro flex alinha glass" style="margin-bottom: 1rem;">
       <div class="skillscabecalho">
         <div class="formataskills">
         <header class="hero hero--map gps-bg">	
@@ -309,7 +300,7 @@
   </div>
 </div>      
 </section>
-<section class="center flex alinha alvojanela" style="margin-top: 3rem;" id="janela3">
+<section class="center flex alinha" style="margin-top: 3rem;" id="servicos-secao">
     <div class="cartao glass alinha flex" id="servicos">
         <div class="header-transp flex horiz" style="width: 100%; margin-left: 2rem; padding: 1rem; margin-right: 1rem;">
             <div class="flex w100" style="align-items: center;">       
@@ -319,6 +310,7 @@
                 <i class="uil uil-home" style="margin-right: 0.5rem;"></i>/Servicos
                 </div>                
             </div>
+            <div class="btn-fechar"></div>
         </div>
         <div class="cartaodentro flex alinha" style="margin-bottom: 1rem;">
                 <div class="conteudo">
@@ -376,9 +368,10 @@
         </div>
     </div>      
 </section>
-<section class="center flex alinha alvojanela" style="margin-top: 3rem;" id="janela4">
+<section class="center flex alinha" style="margin-top: 3rem;" id="portfolio-secao">
 <div class="cartao glass alinha flex" id="portfolio">
   <div class="header-transp flex horiz">
+    <div class="btn-fechar"></div>
     <div class="icon photos diminui-janela">
       <span class="fan f1"></span>
       <span class="fan f2"></span>
@@ -645,9 +638,10 @@
       </div>  
     </div>      
 </section>
-<section class="center flex alinha alvojanela" style="margin-top: 3rem;" id="janela5">
+<section class="center flex alinha" style="margin-top: 3rem;" id="contato-secao">
     <div class="cartao glass alinha flex" id="contato">
         <div class="header-transp flex horiz">
+            <div class="btn-fechar"></div>
             <div class="icon messages diminui-janela"></div>
             <h2 class="titulo-header">Contato</h2>
         </div>           
@@ -696,24 +690,24 @@
 </main>
 <footer>
   <ul>
-    <li data-title="Resumo">
-      <div class="icon appstore diminui fundicone mostraJanela" target="1">
+    <li data-title="Resumo" href="javascript:;" class="modal-sobremim">
+      <div class="icon appstore diminui fundicone">
         <span class="picto">
           <span class="pencil"></span>
           <span class="crayon"></span>
         </span>
       </div>
     </li>
-    <li data-title="Habilidades">
-      <div class="icon reminders diminui fundicone mostraJanela" target="2">
+    <li data-title="Habilidades" href="javascript:;" class="modal-habilidades">
+      <div class="icon reminders diminui fundicone">
         <span class="list-item i1"></span>
         <span class="list-item i2"></span>
         <span class="list-item i3"></span>
         <span class="list-item i4"></span>
       </div>
     </li>
-    <li data-title="Serviços">
-      <div class="icon safari diminui fundicone mostraJanela" target="3">
+    <li data-title="Serviços" href="javascript:;" class="modal-servicos">
+      <div class="icon safari diminui fundicone">
         <span class="compass">
           <span class="scale">
             <span class="line l1"></span>
@@ -738,8 +732,8 @@
         </span>
       </div>
     </li>
-    <li data-title="Portfólio">
-      <div class="icon photos diminui fundicone mostraJanela" target="4">
+    <li data-title="Portfólio" href="javascript:;" class="modal-portfolio">
+      <div class="icon photos diminui fundicone">
         <span class="fan f1"></span>
         <span class="fan f2"></span>
         <span class="fan f3"></span>
@@ -750,12 +744,12 @@
         <span class="fan f8"></span>
       </div>
     </li>
-    <li data-title="Contato">
-      <div class="icon messages diminui fundicone mostraJanela" target="5"></div>
+    <li data-title="Contato" href="javascript:;" class="modal-contato">
+      <div class="icon messages diminui fundicone"></div>
     </li>
   </ul>
 </footer>    
-<script src="assets/js/gatilhos_novo.js"></script>
+<script src="assets/js/gatilhos.js"></script>
 <script src="assets/js/idade.js"></script>
 <script src="assets/js/icones.js"></script>
 </body>

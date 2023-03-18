@@ -1,5 +1,7 @@
-// ANIMACAO INPUT RANGE ASSOCIANDO A MUDANÇA AO CSS = hue-color
+// HIDE modals
+$('.alvojanela').hide(0);
 
+// ANIMACAO INPUT RANGE ASSOCIANDO A MUDANÇA AO CSS = hue-color
 function inicia(){
   animainicia = setInterval(function() {
     var slider = $('#shade').val(function(i, val) {
@@ -8,20 +10,15 @@ function inicia(){
     });
   }, 100);
 }
-
 // Starta animação do input range
-
 inicia();
-
 // Stop animação do input range
-
 function pararanimacao(){
   clearInterval(animainicia);
 }
 document.getElementById("shade").addEventListener("click", pararanimacao);
 
 // PICK COR VARIAVEL HSL
-
 let slider = document.querySelector('#shade');
 slider.value = 0;
 slider.addEventListener('input', function(){
@@ -55,71 +52,9 @@ $(".switch").on("click", () => {
 // janelas 2.0
 jQuery(function(){
   jQuery('.mostraJanela').click(function(){
-        jQuery('.alvojanela').hide(500);
-        jQuery('#janela'+ $(this).attr('target')).show(500);
+        jQuery('.alvojanela').hide(750);
+        jQuery('#janela'+ $(this).attr('target')).show(1500);
   });
-});
-
-// janelas
-$('.modal-sobremim').on('click', function () {
-  $('#sobremim').addClass('mostrar');
-  $('#sobremim-secao').addClass('mostrar');
-  $('#habilidades').removeClass('mostrar');
-  $('#habilidades-secao').removeClass('mostrar');
-  $('#servicos').removeClass('mostrar');
-  $('#servicos-secao').removeClass('mostrar');
-  $('#portfolio').removeClass('mostrar');
-  $('#portfolio-secao').removeClass('mostrar');
-  $('#contato').removeClass('mostrar');
-  $('#contato-secao').removeClass('mostrar');
-});
-$('.modal-habilidades').on('click', function () {
-  $('#habilidades').addClass('mostrar');
-  $('#habilidades-secao').addClass('mostrar');
-  $('#sobremim').removeClass('mostrar');
-  $('#sobremim-secao').removeClass('mostrar');
-  $('#servicos').removeClass('mostrar');
-  $('#servicos-secao').removeClass('mostrar');
-  $('#portfolio').removeClass('mostrar');
-  $('#portfolio-secao').removeClass('mostrar');
-  $('#contato').removeClass('mostrar');
-  $('#contato-secao').removeClass('mostrar');
-});
-$('.modal-servicos').on('click', function () {
-  $('#servicos').addClass('mostrar');
-  $('#servicos-secao').addClass('mostrar');
-  $('#sobremim').removeClass('mostrar');
-  $('#sobremim-secao').removeClass('mostrar');
-  $('#habilidades').removeClass('mostrar');
-  $('#habilidades-secao').removeClass('mostrar');
-  $('#portfolio').removeClass('mostrar');
-  $('#portfolio-secao').removeClass('mostrar');
-  $('#contato').removeClass('mostrar');
-  $('#contato-secao').removeClass('mostrar');
-});
-$('.modal-portfolio').on('click', function () {
-  $('#portfolio').addClass('mostrar');
-  $('#portfolio-secao').addClass('mostrar');
-  $('#sobremim').removeClass('mostrar');
-  $('#sobremim-secao').removeClass('mostrar');
-  $('#habilidades').removeClass('mostrar');
-  $('#habilidades-secao').removeClass('mostrar');
-  $('#servicos').removeClass('mostrar');
-  $('#servicos-secao').removeClass('mostrar');
-  $('#contato').removeClass('mostrar');
-  $('#contato-secao').removeClass('mostrar');
-});
-$('.modal-contato').on('click', function () {
-  $('#contato').addClass('mostrar');
-  $('#contato-secao').addClass('mostrar');
-  $('#sobremim').removeClass('mostrar');
-  $('#sobremim-secao').removeClass('mostrar');
-  $('#habilidades').removeClass('mostrar');
-  $('#habilidades-secao').removeClass('mostrar');
-  $('#servicos').removeClass('mostrar');
-  $('#servicos-secao').removeClass('mostrar');
-  $('#portfolio').removeClass('mostrar');
-  $('#portfolio-secao').removeClass('mostrar');
 });
 
 
@@ -214,14 +149,20 @@ function updateClock() {
   $("#clock").html(currentTimeString);
   $("#date").html(longTimeString);  
 }
+
 // Relogio
 $(document).ready(function() {
   updateClock();
   setInterval('updateClock()', 10000);
 });
+
 // Click = Jump Dock
 $("footer div").click(function() {
   $(this).removeClass("jump");
   this.offsetWidth = this.offsetWidth;
   $(this).addClass("jump");
 });
+
+// INICIA modal SOBRE.M
+
+$('#janela1').show(3000);
